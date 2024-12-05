@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppDrawer extends StatelessWidget{
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -14,7 +15,7 @@ class AppDrawer extends StatelessWidget{
         child: Text('Drawer Header'),
       ),
       ListTile(
-        title: const Text('Item 1'),
+        title: const Text('Menu'),
         onTap: () {
           Navigator.pushNamed(context, '/main');
           // Update the state of the app.
@@ -22,7 +23,7 @@ class AppDrawer extends StatelessWidget{
         },
       ),
       ListTile(
-        title: const Text('Item 2'),
+        title: const Text('About Me'),
         onTap: () {
           Navigator.pushNamed(context, '/aboutMe');
           // Update the state of the app.

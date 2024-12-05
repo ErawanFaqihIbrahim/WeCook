@@ -1,4 +1,5 @@
 class Recipe {
+  final int id;
   final String title;
   final String description;
   final String imageUrl;
@@ -7,6 +8,7 @@ class Recipe {
   final String category;
 
   Recipe({
+    required this.id,
     required this.title,
     required this.description,
     required this.imageUrl,
